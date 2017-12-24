@@ -59,13 +59,13 @@ class FormArgumentParser(argparse.ArgumentParser):
         sys.exit(2)
 
 
-def usage_message(parser):
-    """
-    Print a message and exit.
-    """
-    sys.stderr.write("error: Missing required arguments.\n")
-    parser.print_help()
-    sys.exit(3)
+    def usage_message(self):
+        """
+        Print a message and exit.
+        """
+        sys.stderr.write("error: Missing required arguments.\n")
+        self.print_help()
+        sys.exit(3)
 
 
 def main():
