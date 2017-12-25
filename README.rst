@@ -8,7 +8,7 @@ JPEG.
 Installation
 ------------
 
-Install for developers:
+Install for developers::
 
     $ mkvirtualenv --python python3 image-caption
     $ setvirtualenvproject
@@ -19,7 +19,7 @@ Install for developers:
 Invocation
 ----------
 
-Effortlessly add your caption to images like this:
+Effortlessly add your caption to images like this::
 
     $ caption --index-file test.tif --font-file lucon.ttf --caption-text "Hello World"
 
